@@ -2,7 +2,7 @@ hexo-theme-yilia
 ================
 
 Yilia 是为 [hexo](https://github.com/tommy351/hexo) 2.4+制作的主题。
-崇尚简约优雅，以及极致的性能。 你可以点击 [我的博客](http://litten.me/) 查看效果。           
+崇尚简约优雅，以及极致的性能。 你可以点击 [我的博客](http://guowupeng.com/) 查看效果。           
  
 如果想体验手机浏览效果，可以扫一下二维码：
 
@@ -77,7 +77,6 @@ git pull
 ## 四、配置
 
 主题配置文件在主目录下的`_config.yml`，请根据自己需要修改使用。
-完整配置例子，可以参考[我的博客备份](https://github.com/litten/BlogBackup)
 
 ```
 # Header
