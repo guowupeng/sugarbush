@@ -105,7 +105,7 @@
 <meta property="og:site_name" content="Albert的博客">
 <meta property="og:description" content="在Windows上安装Git 前往git Download下载 安装完成后，在开始菜单里找到“Git”-&amp;gt;“Git Bash”，在命令行输入: 12$ git config --global user.name &amp;quot;your name&amp;quot;$ git config --global user.email &amp;quot;email@example.com&amp;quot;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-08T01:30:38.315Z">
+<meta property="og:updated_time" content="2017-09-08T06:10:11.538Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git学习笔记">
 <meta name="twitter:description" content="在Windows上安装Git 前往git Download下载 安装完成后，在开始菜单里找到“Git”-&amp;gt;“Git Bash”，在命令行输入: 12$ git config --global user.name &amp;quot;your name&amp;quot;$ git config --global user.email &amp;quot;email@example.com&amp;quot;">
@@ -449,10 +449,15 @@ Git is free software.
 <p>2.添加远程仓库</p>
 </blockquote>
 <pre><code>使用命令git remote add origin git@server-name:path/repo-name.git关联一个远程库
-(注：origin远是程库的名字,git的默认叫法,可改)
+(注：origin是远程库的名字,git的默认叫法,可改)
 
 关联后,使用命令git push -u origin master第一次推送master分支的所有内容
 (注：由于远程库是空的,第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令,之后可直接使用git push origin master推送)
+
+强制覆盖本地文件(如果远程库与本地文件重复)
+git fetch --all #下载远程的库的内容
+git reset --hard origin/master #把HEAD指向刚刚下载的最新的版本
+git pull origin master
 </code></pre><blockquote>
 <p>3.SSH警告</p>
 </blockquote>
