@@ -97,18 +97,18 @@
 
 
 
-<meta name="description" content="使用 ls 命令来查看系统中都有那些 Python 的二进制文件可供使用 ls /usr/bin/python* 查看默认的 Python 版本信息 python --version">
+<meta name="description" content="使用 ls 命令来查看系统中都有那些 Python 的二进制文件可供使用1&apos;ls /usr/bin/python*&apos; 查看默认的 Python 版本信息1&apos;python --version&apos;">
 <meta name="keywords" content="随笔">
 <meta property="og:type" content="article">
 <meta property="og:title" content="更改Ubuntu默认python版本的两种方法">
 <meta property="og:url" content="http://guowupeng.com/2017/07/25/更改Ubuntu默认python版本的两种方法/index.html">
 <meta property="og:site_name" content="Albert的博客">
-<meta property="og:description" content="使用 ls 命令来查看系统中都有那些 Python 的二进制文件可供使用 ls /usr/bin/python* 查看默认的 Python 版本信息 python --version">
+<meta property="og:description" content="使用 ls 命令来查看系统中都有那些 Python 的二进制文件可供使用1&apos;ls /usr/bin/python*&apos; 查看默认的 Python 版本信息1&apos;python --version&apos;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-08T01:30:38.316Z">
+<meta property="og:updated_time" content="2017-09-08T10:25:36.766Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="更改Ubuntu默认python版本的两种方法">
-<meta name="twitter:description" content="使用 ls 命令来查看系统中都有那些 Python 的二进制文件可供使用 ls /usr/bin/python* 查看默认的 Python 版本信息 python --version">
+<meta name="twitter:description" content="使用 ls 命令来查看系统中都有那些 Python 的二进制文件可供使用1&apos;ls /usr/bin/python*&apos; 查看默认的 Python 版本信息1&apos;python --version&apos;">
 
 
 
@@ -451,29 +451,17 @@
       
 
       
-        <blockquote>
-<p>使用 ls 命令来查看系统中都有那些 Python 的二进制文件可供使用</p>
-<pre><code>ls /usr/bin/python*
-</code></pre><p>查看默认的 Python 版本信息</p>
-<pre><code>python --version
-</code></pre></blockquote>
+        <hr>
+<p>使用 ls 命令来查看系统中都有那些 Python 的二进制文件可供使用<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">'ls /usr/bin/python*'</span></div></pre></td></tr></table></figure></p>
+<p>查看默认的 Python 版本信息<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">'python --version'</span></div></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<blockquote>
 <p>在系统级修改 Python 版本</p>
-<p>使用 update-alternatives 来为整个系统更改 Python 版本。以 root 身份登录，首先罗列出所有可用的 python 替代版本信息</p>
-<pre><code>update-alternatives --list python
-</code></pre><p>将 python2.7 和 python3.5 放入其中</p>
-<pre><code>update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
-update-alternatives --install /usr/bin/python python /usr/bin/python3.4 2
-【--install 选项使用了多个参数用于创建符号链接。最后一个参数指定了此选项的优先级，如果我们没有手动来设置替代选项，那么具有最高优先级的选项就会被选中】
-</code></pre><p>列出可用的 Python 替代版本</p>
-<pre><code>update-alternatives --list python
-</code></pre><p>使用下方的命令随时在列出的 Python 替代版本中任意切换</p>
-<pre><code>update-alternatives --config python
-</code></pre><p>移除替代版本</p>
-<pre><code>update-alternatives --remove python /usr/bin/python2.7
-</code></pre></blockquote>
-<h2 id=""><a href="#" class="headerlink" title=""></a><!--more--></h2>
+<p>使用 update-alternatives 来为整个系统更改 Python 版本。以 root 身份登录，首先罗列出所有可用的 python 替代版本信息<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">'update-alternatives --list python'</span></div></pre></td></tr></table></figure></p>
+<p>将 python2.7 和 python3.5 放入其中<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="string">'update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1'</span></div><div class="line"><span class="string">'update-alternatives --install /usr/bin/python python /usr/bin/python3.5 2'</span></div><div class="line"><span class="comment">#【--install 选项使用了多个参数用于创建符号链接。最后一个参数指定了此选项的优先级，如果我们没有手动来设置替代选项，那么具有最高优先级的选项就会被选中】</span></div></pre></td></tr></table></figure></p>
+<p>列出可用的 Python 替代版本<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">'update-alternatives --list python'</span></div></pre></td></tr></table></figure></p>
+<p>使用下方的命令随时在列出的 Python 替代版本中任意切换<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">'update-alternatives --config python'</span></div></pre></td></tr></table></figure></p>
+<p>移除替代版本<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">'update-alternatives --remove python /usr/bin/python2.7'</span></div></pre></td></tr></table></figure></p>
+<!--more-->
       
     </div>
     
@@ -594,17 +582,8 @@ update-alternatives --install /usr/bin/python python /usr/bin/python3.4 2
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
             <img class="site-author-image" itemprop="image"
@@ -690,22 +669,6 @@ update-alternatives --install /usr/bin/python python /usr/bin/python3.4 2
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text"></span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
