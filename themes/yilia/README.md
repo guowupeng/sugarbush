@@ -6,7 +6,7 @@ Yilia 是为 [hexo](https://github.com/tommy351/hexo) 2.4+制作的主题。
  
 如果想体验手机浏览效果，可以扫一下二维码：
 
-![litten-qrcode](https://cloud.githubusercontent.com/assets/2024949/6349328/51a067fe-bc64-11e4-881c-f68050c50c28.png)
+![litten-qrcode](http://ovxuqcxth.bkt.clouddn.com/1504835039.png)
 
 —————————————————————
 
