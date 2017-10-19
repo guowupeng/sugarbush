@@ -106,9 +106,9 @@
 <meta property="og:description" content="前言Yii 是一个适用于开发 Web2.0 应用程序的高性能 PHP 框架，帮助Web开发人员建立复杂的应用程序，可以减少开发时间">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ovxuqcxth.bkt.clouddn.com/yii2_install.png">
-<meta property="og:image" content="http://ovxuqcxth.bkt.clouddn.com/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.png">
+<meta property="og:image" content="http://ovxuqcxth.bkt.clouddn.com/yii2%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.png">
 <meta property="og:image" content="http://ovxuqcxth.bkt.clouddn.com/yii%E6%A8%A1%E6%9D%BF%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F%E7%95%8C%E9%9D%A2.png">
-<meta property="og:updated_time" content="2017-10-19T07:33:29.401Z">
+<meta property="og:updated_time" content="2017-10-19T07:42:23.381Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="yii2安装教程">
 <meta name="twitter:description" content="前言Yii 是一个适用于开发 Web2.0 应用程序的高性能 PHP 框架，帮助Web开发人员建立复杂的应用程序，可以减少开发时间">
@@ -461,7 +461,7 @@
 <a id="more"></a>
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
 <li style="list-style: none"><input type="checkbox" checked> 先去Yii官网(<a href="http://www.yiiframework.com/download/)下载一份Yii的高级模版" target="_blank" rel="external">http://www.yiiframework.com/download/)下载一份Yii的高级模版</a><br><img src="http://ovxuqcxth.bkt.clouddn.com/yii2_install.png" alt="image"></li>
-<li style="list-style: none"><input type="checkbox" checked> 将下载下来的文件解压放到web可访问目录，文件名advanced，打开得到如下图所示的目录<br><img src="http://ovxuqcxth.bkt.clouddn.com/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.png" alt="image"></li>
+<li style="list-style: none"><input type="checkbox" checked> 将下载下来的文件解压放到web可访问目录，文件名advanced，打开得到如下图所示的目录<br><img src="http://ovxuqcxth.bkt.clouddn.com/yii2%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.png" alt="image"></li>
 <li style="list-style: none"><input type="checkbox" checked> 目录结构的介绍就不在这里详细说明了，我们主要认识的是三个目录 ==backend==（后台）、==common==(公用)、 ==frontend==（前台）。</li>
 </ul>
 <h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">1. 把php.exe加入系统环境变量</div><div class="line"></div><div class="line">2. 右击我的电脑-属性-高级-环境变量</div><div class="line"></div><div class="line">3. 找到 Path 这一项（可能需要向下滚动才能找到），鼠标双击 Path 这一项，在最后加入你的 PHP 目录和类库所在的路径，包括前面的“;”（例如 ：D:\phpStudy\php\php-5.6.27-nts）</div><div class="line"></div><div class="line">4. 点击“新建”按钮并在“变量名”中输入“PHPRC”，在“变量值”中输入 php.ini 文件所在的目录（例如：D:\phpStudy\php\php-5.6.27-nts） ,这个步骤是为了让windows找到php.ini</div><div class="line"></div><div class="line">5. 运行CMD 进入安装目录中，执行init或在安装目录中运行init.bat，选择 0 开发模式进行安装</div><div class="line"></div><div class="line">【注意：yii2执行init提示openssl问题，php没加载openssl.dll，在php配置文件里，将默认的注释去掉。】</div></pre></td></tr></table></figure>
