@@ -2033,7 +2033,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c9cd3e;
+  background: #9fe5ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3200,7 +3200,6 @@ img:hover {
   bottom: auto;
 }
 body {
-  background-image: url("/uploads/background.png");
   background-attachment: fixed;
   background-repeat: repeat;
 }
